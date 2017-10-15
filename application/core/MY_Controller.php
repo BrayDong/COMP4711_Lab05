@@ -5,6 +5,10 @@
  *
  * Default application controller
  *
+ * @property CI_Parser parser
+ * @property array data
+ * @property CI_Config config
+ *
  * @author		JLP
  * @copyright           2010-2016, James L. Parry
  * ------------------------------------------------------------------------
