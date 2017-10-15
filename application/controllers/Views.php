@@ -26,6 +26,7 @@ class Views extends Application{
         $this->data['pagebody'] = 'homepage';
 
 
+
         $this->data['pagetitle'] = 'Ordered TODO List';
         $tasks = $this->tasks->all();   // get all the tasks
         $this->data['content'] = 'Ok'; // so we don't need pagebody
