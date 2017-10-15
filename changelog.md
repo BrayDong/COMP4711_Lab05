@@ -20,9 +20,7 @@ Release Date: 2017-10-12
     -   views
         - welcome.php
 
-## *Version 1.1 - BT*
-
-## *Version 1.2 - SK*
+## *Version 1.1 - SK*
 Release Date: 2017-10-14
 
 #### NewComponents
@@ -39,3 +37,35 @@ Release Date: 2017-10-14
         - Tasks.php
     -   views
         - welcome.php
+        
+        
+
+## *Version 1.2 - BT*
+Release Date: 2017-10-14
+
+
+#### Updated Components
+    -   controllers
+        - welcome.php
+    -   views
+        - homepage.php
+        
+        
+        
+ ## *Version 1.3 - BT*
+ Release Date: 2017-10-14
+ 
+ #### NewComponents
+    - Libary files
+        - parsedown
+    
+    - Data files
+         - jobs.md
+    
+    - Controllers
+        - Helpme.php
+    
+         
+         
+                
+                
