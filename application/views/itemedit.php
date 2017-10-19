@@ -4,4 +4,7 @@
     {fpriority}
     {zsubmit}
 </form>
+
+<a href="/mtce/cancel"><input type="button" value="Cancel the current edit"/></a>
+
 {error}

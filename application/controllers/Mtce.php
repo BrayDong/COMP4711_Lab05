@@ -121,6 +121,12 @@ class Mtce extends Application {
         $this->render();
     }
 
+    // Forget about this edit
+    function cancel() {
+        $this->session->unset_userdata('task');
+        redirect('/mtce');
+    }
+
     // build a suitable error mesage
     private function alert($message, $type='success') {
         $this->load->helper('html');

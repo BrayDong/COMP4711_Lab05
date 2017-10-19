@@ -128,3 +128,5 @@ Release Date: 2017-10-19
         - Tasks
     - controllers
         - Mtce    
+    - views
+        - itemedit    
