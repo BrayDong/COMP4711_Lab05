@@ -145,4 +145,13 @@ Release Date: 2017-10-19
     - controllers
         - Mtce    
     - views
-        - itemedit    
+        - itemedit
+        
+## *Version 1.9 BT*
+Release Date: 2017-10-19
+
+## Updated Components
+    - controllers
+        - Mtce
+    - views
+        - itemedit                
