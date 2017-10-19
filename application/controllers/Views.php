@@ -58,6 +58,11 @@ class Views extends Application{
 
         // and then pass them on
         $parms = ['display_tasks' => $converted];
+
+        // 8.1: Make the task lisk into a form
+        $role = $this->session->userdata('userrole');
+        $parms['completer'] = ($role == ROLE_OWNER) ? '/views/complete' : '#';
+         
         return $this->parser->parse('by_priority', $parms, true);
     }
 
