@@ -132,3 +132,17 @@ Release Date: 2017-10-19
     - controllers
         - Mtce
                 
+
+## *Version 1.8 BT*
+Release Date: 2017-10-19
+
+## Updated Components
+    - core
+        - Memory_Model
+    - models
+        - App
+        - Tasks
+    - controllers
+        - Mtce    
+    - views
+        - itemedit    
