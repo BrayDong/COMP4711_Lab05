@@ -1,5 +1,6 @@
 <h3>Tasks by Status</h3>
 
+{pagination}
 <table class="table">
     <tr>
         <th>Id</th>
