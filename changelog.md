@@ -121,6 +121,8 @@ Release Date: 2017-10-19
 Release Date: 2017-10-19
 
 ## Updated Components
+    - core
+        - Memory_Model
     - models
         - App
         - Tasks
