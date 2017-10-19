@@ -116,3 +116,10 @@ Release Date: 2017-10-19
     - views
         - by_priority.php
                 
+
+## *Version 1.8 BT*
+Release Date: 2017-10-19
+
+## Updated Components
+    - models
+        -App.php
