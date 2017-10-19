@@ -122,4 +122,5 @@ Release Date: 2017-10-19
 
 ## Updated Components
     - models
-        -App.php
+        - App
+        - Tasks
