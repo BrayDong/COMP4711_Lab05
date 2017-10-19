@@ -20,7 +20,7 @@ class Mtce extends Application {
         // build the task presentation output
         $result = ''; // start with an empty array
         $role = $this->session->userdata('userrole');
-        
+
         foreach ($tasks as $task) {
 
             if (!empty($task->status))

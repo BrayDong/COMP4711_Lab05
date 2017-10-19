@@ -67,5 +67,26 @@ Release Date: 2017-10-14
     
          
          
-                
+
+
+ ## *Version 1.5 - SK*
+ Release Date: 2017-10-19
+
+ #### NewComponents
+    - controllers
+        - Roles
+    - views
+        - itemlist
+        - oneitem
+        - constants
+        - itemnav
+
+ #### Updated Components
+    - configs
+        - config
+        - autoload
+    - controllers
+        - Mtce
+    - views
+        - _menubar
                 
