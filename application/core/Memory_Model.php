@@ -158,7 +158,7 @@ class Memory_Model extends CI_Model implements DataMapper
 		// convert object from associative array, if needed
 		$record = (is_array($record)) ? (object) $record : $record;
 		// update the collection appropriately
-		$key = $data->{$this->_keyfield};
+		$key = $record->{$this->_keyfield};
 		if (isset($this->_data[$key]))
 		{
 			$this->_data[$key] = $record;
@@ -221,12 +221,12 @@ class Memory_Model extends CI_Model implements DataMapper
 		return $results;
 	}
 
-	// Determine the highest key used
-	function highest()
-	{
-		$last = end($this->_data);
-		return $last[$this->_keyfield];
-	}
+    // Determine the highest key used
+    function highest()
+    {
+        end($this->_data);
+        return key($this->_data);
+    }
 
 	// Retrieve first record from a table.
 	function first()

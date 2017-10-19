@@ -1,5 +1,5 @@
-# COMP4711 lab05
-COMP4711 lab 5, Fall 2017
+# COMP4711 lab05 & 6
+COMP4711 lab 5 & 6, Fall 2017
 
 Created by
  2017-10-12
@@ -11,5 +11,4 @@ Technology that used
 ###Authors
 - Brayden Traas
 - Dongwon(Shawn) Kim (Captain)
-
 ###
