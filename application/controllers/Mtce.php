@@ -72,4 +72,15 @@ class Mtce extends Application {
         return $this->parser->parse('itemnav',$parms,true);
     }
 
+
+    // Task 10
+    // Initiate adding a new task
+    public function add()
+    {
+        $task = $this->tasks->create();
+        $this->session->set_userdata('task', $task);
+        $this->showit();
+    }
+
+
 }
