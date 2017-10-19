@@ -65,9 +65,21 @@ Release Date: 2017-10-14
     - Controllers
         - Helpme.php
     
-         
-         
+## *Version 1.4 - BT*
+Release Date: 2017-10-19
 
+### New Components: 
+    - Contollers
+        - Mtce
+    
+    - Views
+        - itemlist
+        - oneitem
+            
+### Updated Components:     
+    - Config
+        - menu: added new Mtce controller         
+                
 
  ## *Version 1.5 - SK*
  Release Date: 2017-10-19
@@ -89,4 +101,18 @@ Release Date: 2017-10-14
         - Mtce
     - views
         - _menubar
+                
+ ## *Version 1.6 - BT*
+ Release Date: 2017-10-19
+
+ #### Updated Components
+    - core
+        - Memory_Model
+    - config
+        - config
+        - autoload
+    - controllers
+        - Views
+    - views
+        - by_priority.php
                 

@@ -19,7 +19,11 @@ function orderByPriority($a, $b) {
 }
 
 
-
+/**
+ * Class Views
+ *
+ * @property Tasks tasks
+ */
 class Views extends Application{
 
     public function index(){
@@ -58,9 +62,38 @@ class Views extends Application{
 
         // and then pass them on
         $parms = ['display_tasks' => $converted];
+
+        // 8.1: Make the task lisk into a form
+        $role = $this->session->userdata('userrole');
+        $parms['completer'] = ($role == ROLE_OWNER) ? '/views/complete' : '#';
+
         return $this->parser->parse('by_priority', $parms, true);
     }
 
+
+    // complete flagged items
+    function complete() {
+
+        // Add hack checking
+        $role = $this->session->userdata('userrole');
+        if ($role != ROLE_OWNER) redirect('/views');
+
+        // loop over the post fields, looking for flagged tasks
+        foreach($this->input->post() as $key=>$value) {
+            if (substr($key,0,4) == 'task') {
+
+                // find the associated task
+                $taskid = substr($key,4);
+                $task = $this->tasks->get($taskid);
+                $task->status = 2; // complete
+
+                // undefined variable 'data'
+                $this->tasks->update($task);
+
+            }
+        }
+        $this->index();
+    }
 
     function makeCategorizedPanel($tasks)
     {
