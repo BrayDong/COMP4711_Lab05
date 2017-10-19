@@ -102,3 +102,17 @@ Release Date: 2017-10-19
     - views
         - _menubar
                 
+ ## *Version 1.6 - BT*
+ Release Date: 2017-10-19
+
+ #### Updated Components
+    - core
+        - Memory_Model
+    - config
+        - config
+        - autoload
+    - controllers
+        - Views
+    - views
+        - by_priority.php
+                
