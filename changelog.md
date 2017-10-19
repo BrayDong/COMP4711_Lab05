@@ -64,9 +64,6 @@ Release Date: 2017-10-14
     
     - Controllers
         - Helpme.php
-    
-         
-         
 
 
  ## *Version 1.5 - SK*
@@ -89,4 +86,16 @@ Release Date: 2017-10-14
         - Mtce
     - views
         - _menubar
-                
+
+## *Version 1.7 - SK*
+ Release Date: 2017-10-19
+
+ #### NewComponents
+    - views
+        - itemadd
+        - oneitemx
+
+ #### Updated Components
+
+    - controllers
+        - Mtce
