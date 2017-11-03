@@ -29,7 +29,7 @@ class App extends CI_Model
 		2	 => 'medium',
 		3	 => 'large'
 	];
-	// task ststus
+	// task status
 	private $statuses = [
 		1	 => 'in progress',
 		2	 => 'complete',
