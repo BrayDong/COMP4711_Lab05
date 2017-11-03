@@ -2,6 +2,7 @@
 // pull in the interface we are supposed to implement
 // Note that it doesn't have to follow the normal CodeIgniter naming rules!
 require_once 'DataMapper.php';
+require_once 'Entity.php';
 
 /**
  * Generic data access model, for an RDB.
@@ -12,7 +13,7 @@ require_once 'DataMapper.php';
  * @copyright           Copyright (c) 2010-2017, James L. Parry
  * ------------------------------------------------------------------------
  */
-class MY_Model extends CI_Model implements DataMapper
+class MY_Model extends Entity implements DataMapper
 {
 
 	protected $_tableName;   // Which table is this a model for?
