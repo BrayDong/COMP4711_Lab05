@@ -11,10 +11,10 @@ require_once APPPATH . 'core/Entity.php';
 
 class Task extends Entity{
 
-    public $task;
-    public $priority;
-    public $size;
-    public $group;
+    protected $task;
+    protected $priority;
+    protected $size;
+    protected $group;
 
     public function setTask($value){
 
