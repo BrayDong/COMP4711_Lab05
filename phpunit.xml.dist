@@ -18,6 +18,10 @@
             <directory>./tests/</directory>
         </testsuite>
     </testsuites>
+    <logging>
+        <log type="testdox-html" target="./tests/reports/testReport.html" />
+    </logging>
+
     <filter>
         <whitelist>
             <directory>./system/</directory>

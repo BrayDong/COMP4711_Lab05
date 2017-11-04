@@ -153,5 +153,5 @@ class TaskTest extends PHPUnit_Framework_TestCase {
         $this->assertNotEquals($group, $this->task->group);
     }
 
-    
+
 }
