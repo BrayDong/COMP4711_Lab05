@@ -19,3 +19,4 @@ application/logs/*
 !application/logs/.htaccess
 /vendor/
 /nbproject/private/
+tests/reports
