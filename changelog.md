@@ -64,12 +64,9 @@ Release Date: 2017-10-14
     
     - Controllers
         - Helpme.php
-<<<<<<< HEAD
-=======
-    
+
 ## *Version 1.4 - BT*
 Release Date: 2017-10-19
->>>>>>> 799de894a51d1acabfd11a2403c3699344989b23
 
 ### New Components: 
     - Contollers
@@ -155,3 +152,34 @@ Release Date: 2017-10-19
         - Mtce
     - views
         - itemedit                
+        
+        
+## *Version 2.0 SK*
+Release Date: 2017-11-03
+
+## New Components
+    - tests
+        - Bootstrap.php
+        - TaskTest.php
+
+## Updated Components
+    - Model
+        - Task.php
+    - Core
+        - Entity.php
+        
+## *Version 2.1 BT*
+Release Date: 2017-11-04
+
+## New Components
+    - tests
+        - Bootstrap.php
+        - TaskTest.php
+
+## Updated Components
+    - Model
+        - Task.php
+    - core
+        - Entity.php
+    - tests
+        - TaskTest.php
