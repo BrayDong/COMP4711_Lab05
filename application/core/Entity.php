@@ -38,12 +38,11 @@ class Entity extends CI_Model {
         return $this;
     }
 
-//    public function __get($key){
-//
-//        if(!isset($this -> $key))
-//            return '1';
-//
-//
-//            return $this->$key;
-//    }
+    public function __get($key){
+
+        if(!isset($this -> $key))
+            return null;
+
+        return $this->$key;
+    }
 }
