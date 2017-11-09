@@ -19,8 +19,10 @@ function orderByCategory($a, $b) {
 
 class Tasks extends CSV_Model{
 
+    private $app;
     public function __construct()
     {
+        $this -> app = new App();
         parent::__construct(APPPATH . '../data/tasks.csv', 'id');
     }
 
