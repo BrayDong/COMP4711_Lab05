@@ -72,6 +72,9 @@ class CSV_Model extends Memory_Model
 		}
 		// --------------------
 		// rebuild the keys table
+
+        print_r($this->_data);
+
 		$this->reindex();
 	}
 

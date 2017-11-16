@@ -7,7 +7,7 @@
  * @copyright           Copyright (c) 2010-2017, James L. Parry
  * ------------------------------------------------------------------------
  */
-class CSV_Model extends Memory_Model
+class XML_Model extends Memory_Model
 {
 //---------------------------------------------------------------------------
 //  Housekeeping methods
@@ -40,6 +40,27 @@ class CSV_Model extends Memory_Model
 		$this->load();
 	}
 
+
+    static function arrayToObject($array) {
+        if (!is_array($array)) {
+            return $array;
+        }
+
+        $object = new stdClass();
+        if (is_array($array) && count($array) > 0) {
+            foreach ($array as $name=>$value) {
+                $name = strtolower(trim($name));
+                if (!empty($name)) {
+                    $object->$name = XML_Model::arrayToObject($value);
+                }
+            }
+            return $object;
+        }
+        else {
+            return FALSE;
+        }
+    }
+
 	/**
 	 * Load the collection state appropriately, depending on persistence choice.
 	 * OVER-RIDE THIS METHOD in persistence choice implementations
@@ -49,9 +70,34 @@ class CSV_Model extends Memory_Model
 
         $data = simplexml_load_string(file_get_contents($this->_origin));
 
-        print_r($data);
 
-        $this->_data = $data;
+
+        $data = json_decode(json_encode((array)$data), TRUE);
+
+        //$this
+
+        $this->_data = [];
+
+
+        $firstKey = array_keys($data)[0];
+
+        //print_r($data[$firstKey]);
+        //echo "<br><br>";
+
+        foreach($data[$firstKey] AS $element) {
+
+
+            //var_dump(self::arrayToObject($element));
+
+            $this->_data[@$element['id']] = self::arrayToObject($element);
+
+        }
+
+        //print_r($this->_data);
+
+        //$this->_data = $data;
+
+
 
         //---------------------
 //		if (($handle = fopen($this->_origin, "r")) !== FALSE)

@@ -17,14 +17,13 @@ function orderByCategory($a, $b) {
 }
 
 
-class Tasks extends XML_Model {
+class Tasks_CSV extends CSV_Model{
 
     private $app;
     public function __construct()
     {
         $this -> app = new App();
-        parent::__construct(APPPATH . '../data/tasks.xml', 'id');
-        //print_r($)
+        parent::__construct(APPPATH . '../data/tasks.csv', 'id');
     }
 
     public function getCategorizedTasks()
