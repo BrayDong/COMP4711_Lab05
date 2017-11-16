@@ -167,7 +167,7 @@ class XML_Model extends Memory_Model
 
         $data = $domDoc->saveXML();
 
-        var_dump($data);
+        //var_dump($data);
 
         file_put_contents($this->_origin, $data);
 
