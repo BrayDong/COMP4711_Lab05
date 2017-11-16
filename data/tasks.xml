@@ -3,7 +3,7 @@
 <task>
     <id>1</id>
     <task>COMP1234 assignment</task>
-    <prirority>3</prirority>
+    <priority>3</priority>
     <size>2</size>
     <group>2</group>
     <deadline>20170219</deadline>
@@ -13,7 +13,7 @@
 <task>
     <id>2</id>
     <task>Mow the lawn</task>
-    <prirority>2</prirority>
+    <priority>2</priority>
     <size>2</size>
     <group>1</group>
     <deadline></deadline>
@@ -23,7 +23,7 @@
 <task>
     <id>3</id>
     <task>Wash the car</task>
-    <prirority>2</prirority>
+    <priority>2</priority>
     <size>2</size>
     <group>1</group>
     <deadline></deadline>
@@ -33,7 +33,7 @@
 <task>
     <id>4</id>
     <task>Paint the fence</task>
-    <prirority>1</prirority>
+    <priority>1</priority>
     <size>2</size>
     <group>1</group>
     <deadline></deadline>
@@ -43,7 +43,7 @@
 <task>
     <id>6</id>
     <task>Intramural hockey game</task>
-    <prirority>1</prirority>
+    <priority>1</priority>
     <size>2</size>
     <group>4</group>
     <deadline></deadline>
@@ -53,7 +53,7 @@
 <task>
     <id>7</id>
     <task>Canucks hockey game</task>
-    <prirority>3</prirority>
+    <priority>3</priority>
     <size>3</size>
     <group>4</group>
     <deadline>20170305</deadline>
@@ -63,7 +63,7 @@
 <task>
     <id>8</id>
     <task>Buy steel-toed boots</task>
-    <prirority>2</prirority>
+    <priority>2</priority>
     <size>1</size>
     <group>3</group>
     <deadline></deadline>
@@ -73,7 +73,7 @@
 <task>
     <id>9</id>
     <task>Learn French</task>
-    <prirority>1</prirority>
+    <priority>1</priority>
     <size>3</size>
     <group>3</group>
     <deadline>20161231</deadline>
@@ -83,7 +83,7 @@
 <task>
     <id>10</id>
     <task>Hit the gym</task>
-    <prirority>2</prirority>
+    <priority>2</priority>
     <size>1</size>
     <group>4</group>
     <deadline></deadline>
@@ -93,7 +93,7 @@
 <task>
     <id>11</id>
     <task>Pay bills</task>
-    <prirority>3</prirority>
+    <priority>3</priority>
     <size>1</size>
     <group>1</group>
     <deadline></deadline>
@@ -103,7 +103,7 @@
 <task>
     <id>12</id>
     <task>Meet George</task>
-    <prirority>2</prirority>
+    <priority>2</priority>
     <size>1</size>
     <group>1</group>
     <deadline></deadline>
@@ -113,7 +113,7 @@
 <task>
     <id>13</id>
     <task>Buy milk &amp; bread</task>
-    <prirority>2</prirority>
+    <priority>2</priority>
     <size>1</size>
     <group>1</group>
     <deadline></deadline>
@@ -123,7 +123,7 @@
 <task>
     <id>14</id>
     <task>Read War &amp; Peace</task>
-    <prirority>1</prirority>
+    <priority>1</priority>
     <size>3</size>
     <group>1</group>
     <deadline></deadline>
@@ -133,7 +133,7 @@
 <task>
     <id>15</id>
     <task>Organize the study</task>
-    <prirority>1</prirority>
+    <priority>1</priority>
     <size>4</size>
     <group>1</group>
     <deadline></deadline>
@@ -143,7 +143,7 @@
 <task>
     <id>16</id>
     <task>test task 16</task>
-    <prirority>3</prirority>
+    <priority>3</priority>
     <size>3</size>
     <group>2</group>
     <deadline></deadline>
