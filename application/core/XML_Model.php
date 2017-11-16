@@ -89,6 +89,9 @@ class XML_Model extends Memory_Model
 
             //var_dump(self::arrayToObject($element));
 
+            $this->_fields = array_keys($element);
+
+
             $this->_data[@$element['id']] = self::arrayToObject($element);
 
         }
@@ -141,15 +144,33 @@ class XML_Model extends Memory_Model
 		// rebuild the keys table
 		$this->reindex();
 
-		throw new Exception("Not yet implemented!");
+		//throw new Exception("Not yet implemented!");
 				//---------------------
-		if (($handle = fopen($this->_origin, "w")) !== FALSE)
-		{
-			fputcsv($handle, $this->_fields);
-			foreach ($this->_data as $key => $record)
-				fputcsv($handle, array_values((array) $record));
-			fclose($handle);
-		}
+
+        $domDoc = new DOMDocument;
+        $rootElt = $domDoc->createElement('items');
+        $rootNode = $domDoc->appendChild($rootElt);
+
+        foreach($this->_data AS $row) {
+            $rowElement = $domDoc->createElement('item');
+
+            foreach($row AS $key => $value) {
+
+                $element = $domDoc->createElement($key);
+                $element->appendChild($domDoc->createTextNode($value));
+
+                $rowElement->appendChild($element);
+            }
+            $rootNode->appendChild($rowElement);
+
+        }
+
+        $data = $domDoc->saveXML();
+
+        var_dump($data);
+
+        file_put_contents($this->_origin, $data);
+
 		// --------------------
 	}
 
