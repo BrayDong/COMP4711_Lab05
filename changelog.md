@@ -183,3 +183,22 @@ Release Date: 2017-11-04
         - Entity.php
     - tests
         - TaskTest.php
+
+
+## *Version 3.0 SK*
+Release Date: 2017-11-16
+
+## New Components
+    - data
+        - tasks.xml
+
+
+## *Version 3.1 BT*
+Release Date: 2017-11-16
+
+## New Components
+    - core
+        - XML_Model
+## New Components
+    - models
+        - Tasks
