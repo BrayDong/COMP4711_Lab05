@@ -202,3 +202,10 @@ Release Date: 2017-11-16
 ## New Components
     - models
         - Tasks
+        
+## *Version 4 BT*
+Release Date: 2017-11-16
+
+## Updated Components
+    - core
+        -XML_Model: store()
